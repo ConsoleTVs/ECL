@@ -44,3 +44,35 @@ connection {
   }
 }
 ```
+- TOML:
+```
+name = "my_app"
+year = 2019.0
+version = 1.0
+debug = true
+authors = [
+  "Erik Campobadal <soc@erik.cat>",
+  "Some Other <some@example.com>"
+]
+
+[connection]
+host = "127.0.0.1"
+database = "sample"
+user = "root"
+password = "secret"
+```
+- YAML:
+```
+name: my_app
+year: 2019
+version: 1
+debug: true
+authors:
+  - Erik Campobadal <soc@erik.cat>
+  - Some Other <some@example.com>
+connection:
+  host: 127.0.0.1
+  database: sample
+  user: root
+  password: secret
+```
