@@ -67,7 +67,7 @@ void ecl_scan(ecl_token_list_t *const tokens, const char *const source)
         char c = *current++;
         switch (c) {
             case ' ': { start = current; ++column; break; }
-            case '\r': { printf("OH HI R\n"); }
+            case '\r':
             case '\t': { ++column; break; }
             case '\n': { start = current; ++line; column = 1; break; }
             case '[': { ADD_TOKEN(ECL_TOKEN_LEFT_SQUARE); break; }
